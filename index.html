@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate on scroll</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+    div{
+        
+        margin:20px auto;
+        text-align: center;
+        font-weight: bold;
+    }
+</style>
+<body>
+      <div style="width:100%;height:800px;background:green;"></div>
+
+      <div style="width:200px;height:200px;background:#000;" data-aos="flip-left"></div>
+      <div style="width:200px;height:200px;background:red;" data-aos="flip-right"></div>
+      <div style="width:200px;height:200px;background:yellow;" data-aos="zoom-in"></div>
+      <div style="width:200px;height:200px;background:blue;" data-aos="slide-left"></div>
+      <div style="width:200px;height:200px;background:greenyellow;" data-aos="fade-up-right">fade up right</div>
+      <div style="width:200px;height:200px;background:rebeccapurple;" data-aos="fade-up-left">fade up left</div>
+      <div style="width:200px;height:200px;background:#ccc;" data-aos="fade-down-right"></div>
+      <div style="width:200px;height:200px;background:navajowhite;" data-aos="fade-down-left"></div>
+
+
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+          $('document').ready(()=>{
+            AOS.init();
+          })
+      </script>
+</body>
+</html>
